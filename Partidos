@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Partidos {
+
+	public static void main(String[] args) {
+
+    Scanner entrada=new Scanner(System.in);
+    int pg,em,pp,pt;
+    
+    System.out.println("Ingresa el numero de partidos ganados");
+    pg=entrada.nextInt();
+        
+    System.out.println("Ingresa el numero de partidos empatados");
+    em=entrada.nextInt();
+        
+    System.out.println("Ingresa el numero de partidos perdidos");
+    pp=entrada.nextInt();
+        
+    pt=(pg*3)+(em*1)+(pp*0);
+        
+    System.out.println("El puntaje es"+pt+" puntos");
+	}
+
+}
