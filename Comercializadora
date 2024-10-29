@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Comercializadora {
+
+	public static void main(String[] args) {
+    
+    Scanner entrada=new Scanner(System.in);
+    
+    double mt,en,men,sr,sin,mes
+    
+    System.out.println("Ingresa el monto total del vehiculo");
+    mt=entrada.nextDouble();
+
+    en= mt*0.35;
+
+    sr= mt-en;
+
+    sin= sr*1.12;
+
+    System.out.println("Ingresa el numero de meses para el financiamiento");
+    mes=entrada.nextDouble();
+    men= sin/mes;
+
+    System.out.println("El importe del enganche es "+Math.round(en));
+    System.out.println("El importe de cada mensualidad es "+Math.round(men));
+    
+  }
+
+}
