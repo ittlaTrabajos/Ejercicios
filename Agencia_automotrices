@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Agencia_automotrices {
+
+	public static void main(String[] args) {
+
+  Scanner entrada=new Scanner(System.in);
+
+	double mt,en,men,res;
+
+  System.out.println("Ingresa el monto total del vehiculo");
+  mt=entrada.nextInt();
+
+  en= mt*0.35;
+
+  res= mt-en;
+
+  men= res/18;
+
+  System.out.println("El importe del enganche es "+Marth.round(en));
+  System.out.println("El importe de cada mes es "+Marth.round(men));
+	}
+
+}
